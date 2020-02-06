@@ -1,46 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8"> 
-        <Title>02: Tables</Title>
-    </head> 
-    <body>
-        <table hidden>
-            <caption>
-                3 types of fruit, totalling 530 Ar.
-            </caption>    
-        <thead>
-            <tr>
-              <th scope="col" id="header-item">Item</th>
-              <th scope="col" id="header-cost">Cost per Item</th>       
-              <th scope="col" id="header-qty">Quantity</th>
-              <th scope="col" id="header-price">Price</th>
-            </tr>       
-        </thead>      
-            <tr>
-              <th headers="header-item" scope="row" id="row-bananas">Bananas</th>
-              <td headers="row-bananas header-cost">50 Ar</td>
-              <td headers="row-bananas header-qty">5</td>
-              <td headers="row-bananas header-price">250 Ar</td>
-            </tr>    
-               <tr>
-                   <th headers=header-item scope="row" id="row-mangoes">Mangoes</th>
-                   <td headers="row-mangoes header-cost">60 Ar</td>                
-                   <td headers="row-mangoes header-qty">3</td>
-                   <td headers="row-mangoes header-price">180 Ar</td>
-               </tr>
-                <tr>
-                   <th headers=header-item scope="row" id="row-plums">Plums</th>
-                   <td headers="row-plums header-cost">10 Ar</td>
-                   <td headers="row-plums header-qty">10</td>
-                   <td headers="row-plums header-price">100 Ar</td>
-               </tr>
-               <tfoot>
-                <tr>
-                    <th scope="row" colspan="3" id="row-total">Total</th>
-                    <th headers="row-total header-price">530 Ar</th>
-                </tr>
-              </tfoot>
-        </table>
-    </body>
+
+<head>
+  <meta charset="UTF-8">
+  <Title>02: Tables</Title>
+</head>
+
+<body>
+  <table hidden>
+    <caption>
+      3 types of fruit, totalling 530 Ar.
+    </caption>
+    <thead>
+      <tr>
+        <th scope="col" id="header-item">Item</th>
+        <th scope="col" id="header-cost">Cost per Item</th>
+        <th scope="col" id="header-qty">Quantity</th>
+        <th scope="col" id="header-price">Price</th>
+      </tr>
+    </thead>
+    <tr>
+      <th headers="header-item" scope="row" id="row-bananas">Bananas</th>
+      <td headers="row-bananas header-cost">50 Ar</td>
+      <td headers="row-bananas header-qty">5</td>
+      <td headers="row-bananas header-price">250 Ar</td>
+    </tr>
+    <tr>
+      <th headers=header-item scope="row" id="row-mangoes">Mangoes</th>
+      <td headers="row-mangoes header-cost">60 Ar</td>
+      <td headers="row-mangoes header-qty">3</td>
+      <td headers="row-mangoes header-price">180 Ar</td>
+    </tr>
+    <tr>
+      <th headers=header-item scope="row" id="row-plums">Plums</th>
+      <td headers="row-plums header-cost">10 Ar</td>
+      <td headers="row-plums header-qty">10</td>
+      <td headers="row-plums header-price">100 Ar</td>
+    </tr>
+    <tfoot>
+      <tr>
+        <th scope="row" colspan="3" id="row-total">Total</th>
+        <th headers="row-total header-price">530 Ar</th>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+
 </html>

@@ -1,78 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <title></title>
-     <style>
-       <section> {
-         border: 1px solid #ccc;
-         padding:1rem;
-       }</section>E
-       <section>:target {
-           background-color:blue"
-       }</section>
-     </style>
-     </head>
-    <body>
-        <header>
-            <h1>Lists</h1>
-        </header>
-    <nav>
-        <ol>
-            <li><a href="section-unordered">Ordered list</a></li>
-            <li><a href="section-unordered">Unordered list</a></li>
-            <li><a href="section-nav">Unordered list with a nav</a></li>
-        </ol>   
-    </nav>
-        <main>
-              <section id="section-ordered">
-              </section>
 
-              <section id="section-unordered">
-              </section>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Element</title>
+  <style>
+    section {
+      border: 1px solid #ccc;
+      padding: 1rem;
+    }
 
-              <section id="section-nav">
-              </section>
-                  <header>
-                      <h2>Ordered list</h2>
-                  </header>
-                  <ol>
-                      <li>
-                          Item
-                      </li>
-                     <li>    
-                         Item
-                    </li>
-                  </ol>
-                <header>
-                     <h2>
-                        Unordered list
-                     </h2>
-                </header>
-                     <ol>
-                         <li>Item</li>
-                         <li>Item</li>
-                     </ol>
-                  <header>
-                      <h2>   
-                         Unordered list inside a <code>nav</code>
-                      </h2>
-                    </header>   
-                       <nav> 
-                       <ul>
-                           <li>
-                               <a href="">Nav item</a>
-                           </li>
-                           <li>
-                              <a href="">Nav item</a>
-                            </li>
-                        </ul>
-                    </nav> 
-                    </section>
-        </main>
-        <footer>
-            
-        </footer>
-    </body>
+    section:target {
+      background-color: lawngreen;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Lists</h1>
+  </header>
+  <nav>
+    <ol>
+      <li><a href="section-unordered">Ordered list</a></li>
+      <li><a href="section-unordered">Unordered list</a></li>
+      <li><a href="section-nav">Unordered list with a nav</a></li>
+    </ol>
+  </nav>
+  <main>
+    <section id="section-ordered">
+      <header>
+        <h2>Ordered list</h2>
+      </header>
+      <ol>
+        <li>
+          Item
+        </li>
+        <li>
+          Item
+        </li>
+      </ol>
+    </section>
+    <section id="section-unordered">
+      <header>
+        <h2>
+          Unordered list
+        </h2>
+      </header>
+      <ol>
+        <li>Item</li>
+        <li>Item</li>
+      </ol>
+    </section>
+    <section id="section-nav">
+      <header>
+        <h2>
+          Unordered list inside a <code>nav</code>
+        </h2>
+      </header>
+      <nav>
+        <ul>
+          <li>
+            <a href="">Nav item</a>
+          </li>
+          <li>
+            <a href="">Nav item</a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+  </main>
+  <footer>
+
+  </footer>
+</body>
+
 </html>
