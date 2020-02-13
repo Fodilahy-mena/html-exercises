@@ -54,12 +54,12 @@
       <fieldset>
         <legend>Date of birth</legend>
         <!-- The server is expecting the user's `date_of_birth` here. -->
-        <input type="date" id="date_of_birth" name="date_of_birth">
+        <input type="search" id="date_of_birth" name="date_of_birth">
       </fieldset>
       <fieldset>
         <legend>Age</legend>
         <!-- The server is expecting the user's `age` in years here. -->
-
+        <input type="number" id="age" name="age">
       </fieldset>
       <div>
         <button type="submit" name="form" value="text">Send</button>
@@ -205,7 +205,7 @@
           <option value="pigeon">Pigeons
           <option value="raven">Raven
           <option value="robin">Robins
-          <option value="swallow" name="swallow">Swallows
+          <option value="swallow">Swallows
         </select>
       </fieldset>
       <div>
@@ -227,7 +227,7 @@
         <legend>File(s)</legend>
         <!--
             The server is expecting at least one file here, with the name of `photos`.
-          --><input type="file" name="photos">
+          --><input type="file" name="file">
       </fieldset>
       <fieldset>
         <legend>Range</legend>
@@ -240,7 +240,7 @@
         <!--
             The server is expecting at a colour value for `background_colour`
           -->
-        <input type="color" name="background_colour">
+        <input type="search" name="background_colour">
       </fieldset>
       <div>
         <button type="submit" name="form" value="other">Send</button>
