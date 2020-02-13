@@ -16,41 +16,38 @@
         The google sheet can be found at: https://docs.google.com/spreadsheets/d/1Vnkb5rE1kgXFMt2So3RwfvfLwayVtATt1o9NM-ry9UI/edit?usp=sharing
         Create a field for each cell in the Google Sheet.
       -->
-    <label><b><br>Contributor<br></b>
-      <input type="text" name="Contributor" value="Jerome" required>
-    </label>
-    <label><b><br>Artist name<br></b>
-      <br><input type="text" name="artist-name" value="Jazz mmc" required>
-    </label>
-    <label><b><br>Artist ID<br></b>
-      <input type="text" name="artist-id" value="jazz-mmc" required>
-    </label>
-    <label><b><br>Photos web address<br></b>
-      <input type="url" name="photos-url"
-        value="https://www.google.com/search?q=jazz+mmc&tbm=isch&ved=2ahUKEwifxYCw_8vnAhXcgM4BHSf7ARkQ2-cCegQIABAA&oq=jazz+mmc&gs_l=img.3..35i39l2j0l2j0i5i30j0i8i30l2j0i30l2j0i5i30.8337.12731..13634...0.0..0.630.4768.5-8......0....1..gws-wiz-img.6NaY8t9kbew&ei=7exDXt-aM9yBur4Pp_aHyAE&bih=553&biw=725"
-        required>
-    </label>
-    <label><b><br>Artist's biography<br></b>
-      <textarea rows="10" cols="35" name="biography" required>
- A well-known malagasy artist Jazz mmc is come from Diego suarez. His real name is MOHAMED Ibrahim, he has two children, a 5 year old girl and a 9 year old boy.
- He started to be an artist in 2010 and become famous in 2014.
-          </textarea>
-    </label>
-    <label><b><br>Genre<br></b>
-      <input type="radio" value="waza-style" required>waza style
-    </label>
-    <p>
-      <input type="radio" value="gweta-gasy" required>Gweta gasy
-    </p>
-    <p>
-      <input type="radio" value="r&b" required>R&B
-    </p>
-    <label for="url"><b>Website</b></label>
-    <p>
-      <input type="url" id="url" name="URL"
-        value="https://www.google.com/search?q=jazz+mmc&source=lmns&bih=553&biw=725&hl=en-GB&ved=2ahUKEwjW2cK5_8vnAhUNKhoKHXclAqwQ_AUoAHoECAEQAA"
-        required>
-    </p>
+      <input type="hidden" name="contributor" value="Jerome">
+      <fieldset>
+    <legend>Artist's name<br></legend>
+      <input type="text" name="artist_name" required>
+      </fieldset>
+      <fieldset>
+    <legend>Artist's ID<br></legend>
+      <input type="text" name="artist_id" required>
+    <p>Please the artist's ID must be lowercase</p>
+    </fieldset>
+      <fieldset>
+    <legend>Photos web address<br></legend>
+      <input type="URL" name="photo_url" required>
+     <p>Please enter an artist's photo URL</p>
+    </fieldset>
+      <fieldset>
+    <legend>Artist's biography<br></legend>
+      <textarea rows="10" cols="35" name="biography" required></textarea>
+      </fieldset>
+      <fieldset>
+    <legend>Genre<br></legend>
+    <select name="genre" id="genre">
+      <option value="waza-style" selected>waza style</option>
+      <option value="gweta-gasy">Gweta gasy</option>
+      <option value="r&b">R&B</option>
+    </select>
+      </fieldset>
+      <fieldset>
+    <legend>Website<br></legend>
+      <input type="URL" name="website" required>
+     <p>Please entwr an artist's website<p>
+    </fieldset>
     <button type="submit">Save</button>
   </form>
 </body>
