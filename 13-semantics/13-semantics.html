@@ -19,11 +19,18 @@
         <h2>A menu of a list of links</h2>
         <!--
           1. Create a list of links to form a navigational element. The links are:
-            - "Home" links to "/"
+          - "Home" links to "/"
             - "Our services" links to "/services"
             - "About us" links to "/about"
             - "Contact us" links to "/contact"
         -->
+
+        <ul>
+          <li><a href="https://dndbeyond.com">Home</a></li>
+          <li><a href="https://dndbeyond.com">Our services</a></li>
+          <li><a href="https://dndbeyond.com">About us</a></li>
+          <li><a href="https://dndbeyond.com">Contact us</a></li>
+       </ul>
       </section>
 
       <section>
@@ -41,19 +48,43 @@
               - Prefer to not disclose, "na"
             - Photo, optional, as "profile_photo". The user can upload a photo if they want. We only accept PNGs, JPGs, and WebP formats.
         -->
+      <fieldset>
+        <legend>First name</legend>
+        <input type="text" id="profile_first_name" name="profile_first_name" required>
+      </fieldset>
+      <fieldset>
+        <legend>Family name</legend>
+        <input type="text" id="fprofile_family_name" name="profile_family_name" required>
+      </fieldset>
       </section>
-
+      <fieldset>
+        <legend>Email</legend>
+          <input type="text" id="username" name="username" required>
+      </fieldset>
+      <fieldset>
+        <legend>Phone number</legend>
+        <input type="tel" id="phone" name="phone" required>
+      </fieldset>
+      <fieldset>
+        <legend>Gender</legend>
+          <ul>
+            <li><input type="radio" name="male">Male</li>
+            <li><input type="radio" name="female">Female</li>
+          </ul>
+      </fieldset>
       <section>
         <h2>An excerpt</h2>
         <!--
-          3. This excerpt is from a short story called "The story of your life" by "Ted Chiang". Supply the attribution to the author and their title, then mark-up the following excerpt correctly:
-
-          "The only reason you had me was so you could get a maid you wouldn't have to pay," you'll say bitterly, dragging the vacuum cleaner out of the closet.
-
-          "That's right!" I'll say. "Thirteen years ago I knew the carpets would need vacuuming around now, and having a baby seemed to be the cheapest and easiest way to get the job done. Now kindly get on with it."
-
-          "If you weren't my mother, this would be illegal," you'll say, seething as you unwind the power cord and plug it into the wall outlet.
+       3. This expert is frome a short story called "The story of  my life" by "Ted Chiang". Supply the attribution to the author and their title, then mark-up the following excerpt correctly:
         -->
+        <p><b>This excerpt is from a short story called <dfn>The story of your life</dfn> by <dfn>Ted Chiang</dfn>.</b></p>
+
+        <p><q>The only reason you had me was so you could get a maid you wouldn't have to pay,</q> you'll say bitterly, dragging the vacuum cleaner out of the closet.</p>
+
+        <p><q><em>That's right!</em></q> I'll say. <q>Thirteen years ago I knew the carpets would need vacuuming around now, and having a baby seemed to be the cheapest and easiest way to get the job done. Now kindly get on with it.</q></p>
+
+        <p><q>If you weren't my mother, this would be illegal,</q> you'll say, seething as you unwind the power cord and plug it into the wall outlet.</p>
+
       </section>
 
       <section>
@@ -65,7 +96,37 @@
             - Age
             - Weight
             - Height
-
+           -->
+           <table>
+          <caption><b>Students details</b></caption>
+          <thead>
+            <tr>
+              <th scope="col" id="header_name">Name</th>
+              <th scope="col" id="header_age">Age</th>
+              <th scope="col" id="header_weight">Weight</th>
+              <th scope="col" id="header_height">Height</th>
+            </tr>
+          </thead>
+            <tr>
+              <th headers="header_name" scope="row" id="row_fred">Fred</th>
+              <td headers="row_fred header_age">23</td>
+              <td headers="row_fred header_weight">74kg</td>
+              <td headers="row_fred header_height">182cm</td>
+            </tr>
+            <tr>
+              <th headers="header_name" scope="row" id="row_anne">Anne</th>
+              <td headers="row_anne header_age">26</td>
+              <td headers="row_anne header_weight">56kg</td>
+              <td headers="row_anne header_height">173cm</td>
+            </tr>
+            <tr>
+              <th headers="header_name" scope="row" id="row_judith">Judith</th>
+              <td headers="row_judith header_age">19</td>
+              <td headers="row_judith header_weight">51kg</td>
+              <td headers="row_judith header_height">168cm</td>
+            </tr>
+           </table>
+           <!---
           Then we need rows for each student, their details are as follows:
 
             - Fred, 23, 74kg, 182cm
@@ -111,6 +172,8 @@
             Excerpt:
               Develop your critical thinking skills. Boost your ability to solve problems and make the right decisions at work, home and in study.
         -->
+        <h3>Critical Thinking|SkillsYouNeed</h3>
+          <p><a href="file:///C:/Users/Jerome/Code/html/html-exercises/13-semantics/search-resalt.html">A link to the search result page</a></p>
       </section>
       <section>
         <h2>A definition</h2>
